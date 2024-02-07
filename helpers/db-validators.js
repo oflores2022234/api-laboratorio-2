@@ -24,6 +24,8 @@ const existeUsuarioById = async (id = '') => {
 
 }
 
+/*Validaciones para mascotas*/
+
 const existeMascotaById = async (id = '') => {
     const existeMascota = await Mascota.findOne({id});
     if(existeMascota){
@@ -31,6 +33,7 @@ const existeMascotaById = async (id = '') => {
     }
 
 }
+
 
 module.exports = {
     esRoleValido,

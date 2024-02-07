@@ -10,11 +10,15 @@ const {
     putUsuarios,
     usuariosDelete} = require('../controllers/user.controller');
 
-const { existenteEmail, esRoleValido, existeUsuarioById } = require('../helpers/db-validators');
+
+const { existenteEmail, esRoleValido, existeUsuarioById} = require('../helpers/db-validators');
+
 
 const router = Router();
 
 router.get("/", usuariosGet);
+
+
 
 router.get(
     "/:id",

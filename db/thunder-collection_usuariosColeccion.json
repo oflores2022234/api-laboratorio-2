@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "usuariosColeccion",
-    "dateExported": "2024-02-06T22:26:36.228Z",
+    "dateExported": "2024-02-07T23:29:33.857Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,12 +14,12 @@
             "method": "POST",
             "sortNum": 40000,
             "created": "2024-02-06T19:44:07.205Z",
-            "modified": "2024-02-06T21:20:16.906Z",
+            "modified": "2024-02-07T22:08:37.615Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\r\n    \"nombre\":\"test15\",\r\n    \"correo\":\"test15@gmail.com\",\r\n    \"password\":\"123456\",\r\n    \"role\":\"USER_ROLE\"\r\n}",
+                "raw": "{\n    \"nombre\":\"test17\",\n    \"correo\":\"test17@gmail.com\",\n    \"password\":\"123456\",\n    \"role\":\"USER_ROLE\"\n}",
                 "form": []
             },
             "tests": []
@@ -29,16 +29,16 @@
             "colId": "4cc1cc4d-d7bd-46d8-b344-fac872e91501",
             "containerId": "",
             "name": "get usuarios",
-            "url": "http://localhost:3000/api/usuarios?desde=1&limite=5",
+            "url": "http://localhost:3000/api/usuarios?desde=15&limite=5",
             "method": "GET",
             "sortNum": 70000,
             "created": "2024-02-06T21:38:00.958Z",
-            "modified": "2024-02-06T22:21:58.708Z",
+            "modified": "2024-02-07T22:08:20.079Z",
             "headers": [],
             "params": [
                 {
                     "name": "desde",
-                    "value": "1",
+                    "value": "15",
                     "isPath": false
                 },
                 {
@@ -92,6 +92,97 @@
             "sortNum": 110000,
             "created": "2024-02-06T22:22:14.840Z",
             "modified": "2024-02-06T22:23:53.276Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1ddfb7d2-52f0-437e-be06-9393698f6418",
+            "colId": "4cc1cc4d-d7bd-46d8-b344-fac872e91501",
+            "containerId": "",
+            "name": "post mascotas",
+            "url": "http://localhost:3000/api/mascotas",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-02-07T21:42:17.633Z",
+            "modified": "2024-02-07T23:06:38.936Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"nombre\":\"req\",\n    \"especie\":\"Caballo\",\n    \"edad\":\"18 meses\",\n    \"tamano\":\"mediano\",\n    \"color\":\"gris y negro\",\n    \"sexo\":\"masculino\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "557d3a25-6341-43a8-af04-e1889177bfaa",
+            "colId": "4cc1cc4d-d7bd-46d8-b344-fac872e91501",
+            "containerId": "",
+            "name": "get mascotas",
+            "url": "http://localhost:3000/api/mascotas?desde=0&limite=5",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-02-07T22:30:54.648Z",
+            "modified": "2024-02-07T22:34:26.102Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "desde",
+                    "value": "0",
+                    "isPath": false
+                },
+                {
+                    "name": "limite",
+                    "value": "5",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "e425c6ba-28e9-4a71-8cd7-9852aec14d1b",
+            "colId": "4cc1cc4d-d7bd-46d8-b344-fac872e91501",
+            "containerId": "",
+            "name": "get MascotaById",
+            "url": "http://localhost:3000/api/mascotas/65c40cf452c8c907ee18e060",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-02-07T22:43:52.118Z",
+            "modified": "2024-02-07T23:07:01.834Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0352a133-5619-4343-a140-ba2a41e33470",
+            "colId": "4cc1cc4d-d7bd-46d8-b344-fac872e91501",
+            "containerId": "",
+            "name": "put Mascota",
+            "url": "http://localhost:3000/api/usuarios/65c40cfe52c8c907ee18e066",
+            "method": "PUT",
+            "sortNum": 150000,
+            "created": "2024-02-07T22:57:54.047Z",
+            "modified": "2024-02-07T23:27:17.844Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"nombre\":\"Alejandro\",\n    \"especie\":\"Gato\",\n    \"edad\":\"5 meses\",\n    \"tamano\":\"grande\",\n    \"color\":\"negro\",\n    \"sexo\":\"Masc\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ff499dfd-6fb2-4acb-8b3d-a8a78ec7f06c",
+            "colId": "4cc1cc4d-d7bd-46d8-b344-fac872e91501",
+            "containerId": "",
+            "name": "delete Mascota",
+            "url": "http://localhost:3000/api/mascotas/65c405a575dcdc63b67fb479",
+            "method": "DELETE",
+            "sortNum": 160000,
+            "created": "2024-02-07T23:12:03.826Z",
+            "modified": "2024-02-07T23:21:12.486Z",
             "headers": [],
             "params": [],
             "tests": []
