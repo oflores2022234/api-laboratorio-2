@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "mascotasColeccion",
+    "dateExported": "2024-02-20T19:10:40.174Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "10b89412-78de-4a38-886e-c2968e4ecba9",
+            "colId": "255c2c03-211c-4eff-b9d9-a3ecc0b40ee8",
+            "containerId": "",
+            "name": "post mascotas",
+            "url": "http://localhost:3000/api/mascotas",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-20T18:53:04.486Z",
+            "modified": "2024-02-20T19:00:04.745Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"nombre\":\"manchas\",\n    \"especie\":\"perro\",\n    \"edad\":\"5 meses\",\n    \"tamano\":\"blanco y negro\",\n    \"color\":\"peqieño\",\n    \"sexo\":\"masculino\"\n}\n\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a0568be5-8b46-4598-89dd-ad60c8117bd5",
+            "colId": "255c2c03-211c-4eff-b9d9-a3ecc0b40ee8",
+            "containerId": "",
+            "name": "delete mascota ",
+            "url": "http://localhost:3000/api/mascotas/65c4058f7c5813d1b73188bd",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-02-20T18:53:04.487Z",
+            "modified": "2024-02-20T18:53:04.487Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "85c8cad1-cda2-4e11-8974-4f1c698db419",
+            "colId": "255c2c03-211c-4eff-b9d9-a3ecc0b40ee8",
+            "containerId": "",
+            "name": "get mascotas",
+            "url": "http://localhost:3000/api/mascotas",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-02-20T18:53:04.488Z",
+            "modified": "2024-02-20T18:53:04.488Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f69409ba-20ee-4881-9132-d439a96a98aa",
+            "colId": "255c2c03-211c-4eff-b9d9-a3ecc0b40ee8",
+            "containerId": "",
+            "name": "get MascotaById",
+            "url": "http://localhost:3000/api/mascotas/65d4f6b4221c8b288d49d4fb",
+            "method": "GET",
+            "sortNum": 65000,
+            "created": "2024-02-20T18:53:04.489Z",
+            "modified": "2024-02-20T19:00:46.353Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "07185441-8dfd-44af-9fdc-34caf89a77a2",
+            "colId": "255c2c03-211c-4eff-b9d9-a3ecc0b40ee8",
+            "containerId": "",
+            "name": "put mascotas",
+            "url": "http://localhost:3000/api/mascotas/65d4f6b4221c8b288d49d4fb",
+            "method": "PUT",
+            "sortNum": 75000,
+            "created": "2024-02-20T19:05:18.444Z",
+            "modified": "2024-02-20T19:08:31.384Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"nombre\":\"manchassss\",\n    \"especie\":\"gatito\",\n    \"edad\":\"20 meses\",\n    \"tamano\":\"gris y negro\",\n    \"color\":\"mediano\",\n    \"sexo\":\"no definido\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

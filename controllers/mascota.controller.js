@@ -43,11 +43,10 @@ const putMascotas = async (req, res = response) => {
     const { id } = req.params;
     const { _id, ...resto } = req.body;
 
-
     const mascota = await Mascota.findByIdAndUpdate(id, resto);
 
     res.status(200).json({
-        msg: 'Mascota Actualizado Exitosamente!!!',
+        msg: 'Mascota Actualizada Exitosamente!!!',
         mascota
     })
 }
